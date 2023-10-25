@@ -1,0 +1,113 @@
+/* body {
+    margin: 0%;
+    background-color: blanchedalmond;
+} */
+
+.header, .about, .contacts {
+    background-color: blanchedalmond;
+    margin: 0%;
+}
+
+/* Шапка */
+
+.headlogo {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    justify-content: center;
+    background-color: red;
+}
+
+/* .headlogo>div {
+    background-color: chartreuse;
+    justify-content: center;
+    display: flex;
+} */
+
+.headlogo img {
+    width: 100%;
+}
+
+.headcontact {
+    background-color: red;
+    color: gold;
+    align-items: center;
+    height: 100px;
+}
+
+.headcontact>div {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Тело */
+
+.main {
+    margin: 0%;
+}
+
+/* О нас */
+
+/* общий контейнер "О нас" */
+
+
+/* Загловок "О нас" */
+
+.titleabout, .titlecontacts {
+    background-color: white;
+}
+
+.titleabouttext, .titlecontactstext {
+    background-color: white;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+/* Текст "О нас" */
+
+.textabout, .contactsall, .contactsmap {
+    background-color:blanchedalmond;
+}
+
+.textabouttext, .contactsalltext, .contactsmaphere {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Контакты */
+
+.contactsalltext {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socialicons {
+    margin-top: 10px;
+}
+
+.socialicons>a {
+    margin-right: 10px;
+}
+
+/* Подвал */
+
+.footer {
+    background-color:rgb(64, 64, 64);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.ssilka>a {
+    text-decoration: none;
+}

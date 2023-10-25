@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Полиграфия "МАЯК"</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.0.1-dist/css/bootstrap.min.css' %}">
+</head>
+
+<body>
+
+<!-- шапка -->
+    <header class='header'>
+
+        <div class="container">
+            <div class="row">
+
+<!-- логотип -->
+                <div class="col-md-3 col-sm-12 headlogo">
+                    <div><img src="{% static 'img/logo.png' %}"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-0 headspace"></div>
+
+<!-- телефон / почта -->
+                <div class="col-md-3 col-sm-12 headcontact">
+                    <div><a href="tel:+73462350368">8(3462)350368</a></div>
+                    <div><a href="mailto:mayk369@mail.ru">mayk369@mail.ru</a></div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+<!-- конец шапки -->
+
+<!-- страница -->
+    <main class='main'>
+
+<!-- блок "О нас" -->
+        <div class="about">
+
+            <div class="titleabouttext">
+                <h2>О нас</h2>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="textabouttext">
+                            Мы - это команда специалистов, объединенных общей целью - <br>
+                            предоставлять качественные полиграфические услуги и услуги срочного фото. <br>
+                            Наш опыт и профессионализм позволяют нам успешно работать на рынке уже много лет, начиная с 2003 года. <br><br>
+                            Чем мы отличаемся: <br><br>
+
+                            Низкие Цены: <br>
+                            Мы предлагаем конкурентоспособные цены, делая наши услуги доступными для всех. <br>
+                            Мы понимаем, что экономия важна. <br><br>
+
+                            Большой Ассортимент: <br>
+                            Наш каталог продукции и услуг обширен. Независимо от того, нужна ли вам печать чертежей, <br>
+                            переплет дипломных работ или срочное фото, у нас вы найдете то, что вам нужно. <br><br>
+
+                            Индивидуальный Подход: <br>
+                            Мы понимаем, что каждая работа уникальна. Мы обеспечиваем индивидуальный подход к каждому заказу, <br>
+                            чтобы удовлетворить ваши требования. <br><br>
+
+                            С нами вы получаете надежного партнера в сфере полиграфии и фотоуслуг. <br>
+                            Наша компания гордится своей репутацией и стремится удовлетворить потребности наших клиентов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- конец блока "О нас" -->
+
+<!-- блок "Прайс" -->
+        <div class="price" >
+
+            <div class="container">
+
+                <div class="row">
+
+                    {% for i in price %}
+                    <div class="col-md-4 col-sm-12 colprice">
+                        <div class="boxprice">
+                            <div>
+                                <img src="{% static i.image %}">
+                            </div>
+                            <div>{{ i.title }}</div>
+                            <div>{{ i.cena }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+
+        </div>
+<!-- конец блока "Прайс" -->
+
+<!-- блок "Контакты" -->
+        <div class="contacts">
+
+            <div class="titlecontactstext">
+                <h2>Контакты</h2>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12 contactsall">
+                        <div class="contactsalltext">
+                            <div>Полиграфия "МАЯК"</div>
+                            <div>Адрес: г.Сургут, пр.Ленина, д.49/1, второй этаж</div>
+                            <div class="ssilka">Эл.почта: <a href="mailto:mayk369@mail.ru">mayk369@mail.ru</a></div>
+                            <div class="ssilka">Телефон: <a href="tel:+73462350368">8(3462)350368</a>, <a href="tel:+79128110414">8(912)8110414</a></div>
+                            <div class="socialicons">
+                                <a href="whatsapp://send?phone=+79128110414"><img src="{% static 'img/social/whatsapp.png' %}" width="10%"></a>
+                                <a href="viber://chat?number=79128110414"><img src="{% static 'img/social/viber.png' %}" width="10%"></a>
+                                <a href="https://vk.com/club195488141"><img src="{% static 'img/social/vk.png' %}" width="10%"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 contactsmap">
+                        <div class="contactsmaphere">
+                            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/973/surgut/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Сургут</a><a href="https://yandex.ru/maps/973/surgut/?from=mapframe&ll=73.377749%2C61.258334&source=mapframe&utm_medium=mapframe&utm_source=maps&z=18" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=73.377749%2C61.258334&source=mapframe&utm_source=mapframe&z=18" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+<!-- конец блока "Контакты" -->
+
+    </main>
+<!-- конец страницы -->
+
+<!-- подвал -->
+    <footer class='footer'>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 footertext">
+                    by Aleksand_theGreat
+                </div>
+            </div>
+        </div>
+
+    </footer>
+<!-- конец подвала -->
+</body>
+</html>
