@@ -1,10 +1,14 @@
-/* body {
-    margin: 0%;
-    background-color: blanchedalmond;
-} */
+* {
+    font-family: Bahnschrift;
+}
 
-.header, .about, .contacts, .price {
-    background-color: blanchedalmond;
+.header {
+    background-color: rgb(136, 197, 204);
+    font-size: x-large;
+}
+
+.about, .contacts, .price {
+    background-color: white;
     margin: 0%;
 }
 
@@ -15,7 +19,7 @@
     align-items: center;
     font-size: xx-large;
     justify-content: center;
-    background-color: red;
+    background-color: white;
 }
 
 /* .headlogo>div {
@@ -25,12 +29,10 @@
 } */
 
 .headlogo img {
-    width: 100%;
+    height: 100px;
 }
 
 .headcontact {
-    background-color: red;
-    color: gold;
     align-items: center;
     height: 100px;
 }
@@ -40,6 +42,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.headcontact a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Тело */
@@ -60,7 +67,7 @@
 } */
 
 .titleabouttext, .titlecontactstext, .titlepricetext {
-    background-color: white;
+    background-color: rgb(255,212,100);
     height: 100px;
     text-align: center;
     display: flex;
@@ -70,10 +77,6 @@
 }
 
 /* Текст "О нас" */
-
-.textabout, .contactsall, .contactsmap {
-    background-color:blanchedalmond;
-}
 
 .textabouttext, .contactsalltext, .contactsmaphere {
     text-align: left;
@@ -90,7 +93,7 @@
 }
 
 .boxprice {
-    background-color: white;
+    background-color: rgb(255,212,100);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -132,7 +135,7 @@
 /* Подвал */
 
 .footer {
-    background-color:rgb(64, 64, 64);
+    background-color:rgb(14, 86, 122);
     color: white;
     text-align: center;
     padding: 20px;
