@@ -14,18 +14,18 @@
 <!-- шапка -->
     <header class='header'>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
 
 <!-- логотип -->
-                <div class="col-md-3 col-sm-12 headlogo">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 headlogo">
                     <div><img src="{% static 'img/logo.png' %}"></div>
                 </div>
 
-                <div class="col-md-6 col-sm-0 headspace"></div>
+                <div class="col-xs-0 col-sm-0 col-md-0 col-lg-4 col-xl-6 headspace"></div>
 
 <!-- телефон / почта -->
-                <div class="col-md-3 col-sm-12 headcontact">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 headcontact">
                     <div><a href="tel:+73462350368">8(3462)350368</a></div>
                     <div><a href="mailto:mayk369@mail.ru">mayk369@mail.ru</a></div>
                 </div>
@@ -48,7 +48,7 @@
             </div>
 
 <!-- текст "О нас" -->
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <div class="textabouttext">
@@ -85,12 +85,12 @@
                 <h2>Услуги</h2>
             </div>
 
-            <div class="container">
+            <div class="container-fluid">
 
                 <div class="row">
 
                     {% for i in prices %}
-                    <div class="col-lg-4 col-md-6 col-sm-12 colprice">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 colprice">
                         <div class="boxprice">
                             <div class="priceimg">
                                 <img src="{% static i.image %}" width="100%">
@@ -117,7 +117,7 @@
                 <h2>Контакты</h2>
             </div>
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
 
 <!-- контактная информация -->
@@ -154,7 +154,7 @@
 <!-- подвал -->
     <footer class='footer'>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 col-sm-12 footertext">
                     by Aleksand_theGreat
@@ -164,5 +164,6 @@
 
     </footer>
 <!-- конец подвала -->
+<script src="{% static 'bootstrap-5.0.1-dist/js/bootstrap.min.js' %}"></script>
 </body>
 </html>

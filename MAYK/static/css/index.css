@@ -2,9 +2,17 @@
     font-family: Bahnschrift;
 }
 
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+
 .header {
     background-color: rgb(136, 197, 204);
     font-size: x-large;
+    padding-left: 0;
+    /* padding-right: 0; */
 }
 
 .about, .contacts, .price {
@@ -22,14 +30,12 @@
     background-color: white;
 }
 
-/* .headlogo>div {
-    background-color: chartreuse;
-    justify-content: center;
-    display: flex;
-} */
-
 .headlogo img {
     height: 100px;
+}
+
+.headspace {
+    width: min-content;
 }
 
 .headcontact {
@@ -51,9 +57,9 @@
 
 /* Тело */
 
-.main {
+/* .main {
     margin: 0%;
-}
+} */
 
 /* О нас */
 
