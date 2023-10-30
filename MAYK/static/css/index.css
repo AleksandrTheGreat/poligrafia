@@ -84,12 +84,20 @@
 
 /* Текст "О нас" */
 
-.textabouttext, .contactsalltext, .contactsmaphere {
+.contactsalltext, .contactsmaphere {
     text-align: left;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.textabouttext {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* Прайс */
